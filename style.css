@@ -6,6 +6,8 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+
+/* ====== HEADER ====== */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,12 +25,15 @@ header a {
     transition: color 0.3s;
 }
 header a:hover { color: #38bdf8; }
+
+/* ====== HERO ====== */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5% 10%;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
 .hero-text {
     max-width: 50%;
@@ -56,6 +61,8 @@ header a:hover { color: #38bdf8; }
     border: 4px solid #38bdf8;
     animation: slideIn 1.5s ease;
 }
+
+/* ====== SECTIONS ====== */
 section {
     padding: 5% 10%;
     opacity: 0;
@@ -72,7 +79,8 @@ footer {
     padding: 2rem;
     background: #1e293b;
 }
-/* Animations */
+
+/* ====== ANIMATIONS ====== */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -80,4 +88,44 @@ footer {
 @keyframes slideIn {
     from { transform: translateX(100px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero img {
+        margin-top: 20px;
+        width: 250px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    header a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    .hero-text h1 { font-size: 2rem; }
+    .hero-text p { font-size: 1rem; }
+    .hero img {
+        width: 200px;
+    }
+    section {
+        padding: 10% 5%;
+    }
 }

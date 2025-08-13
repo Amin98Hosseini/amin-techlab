@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Embedded Rust | Amin TechLab</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<style>
+.course-header {
+    padding: 120px 5% 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.course-thumbnail {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.course-details {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-details h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.detail-value {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.project-description {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-description h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-description p {
+    color: #e2e8f0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.course-content {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-content h2 {
+    color: #38bdf8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accordion-item {
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background: #334155;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #475569;
+}
+
+.accordion-header h3 {
+    color: #e2e8f0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.accordion-icon {
+    color: #38bdf8;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-icon.active {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #1e293b;
+    opacity: 0;
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.accordion-body {
+    padding: 20px;
+    background: #1e293b;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.part-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+      <div><strong>Amin TechLab</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+  </nav>
+</header>
+
+<section class="course-header">
+    <h1>Embedded Rust</h1>
+    <img src="course 4.jpg" alt="Embedded Rust Course Thumbnail" class="course-thumbnail">
+</section>
+
+<section class="course-details">
+    <h2>Course Information</h2>
+    <div class="detail-item">
+        <span class="detail-label">Instructor:</span>
+        <span class="detail-value">Engineer Amin Khadem Al-Husseini</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">Duration:</span>
+        <span class="detail-value">8 hours</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">Level:</span>
+        <span class="detail-value">Advanced</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">Status:</span>
+        <span class="detail-value" style="color: #10b981; font-weight: bold;">Coming Soon</span>
+    </div>
+</section>
+
+<section class="project-description">
+    <h2>About This Course</h2>
+    <p>
+        Embedded Rust is a comprehensive course that teaches you how to develop embedded systems using the Rust programming language. 
+        Rust's memory safety guarantees and zero-cost abstractions make it an excellent choice for embedded development.
+    </p>
+    <p>
+        You'll learn how to write safe, efficient, and reliable embedded code using Rust. The course covers topics from basic Rust concepts 
+        to advanced embedded programming techniques, including bare metal programming, HAL (Hardware Abstraction Layer), and real-time systems.
+    </p>
+    <p>
+        By the end of this course, you'll be able to develop embedded applications using Rust, understand memory management in embedded systems, 
+        and create robust, production-ready embedded software.
+    </p>
+    <div style="text-align: center; margin-top: 30px; padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border: 2px solid #10b981;">
+        <h3 style="color: #10b981; margin-bottom: 10px;">🚀 Coming Soon!</h3>
+        <p style="color: #e2e8f0; margin: 0;">This course is currently in development. Stay tuned for updates!</p>
+    </div>
+</section>
+
+<section class="course-content">
+    <h2>Course Content & Chapters</h2>
+    
+    <div style="text-align: center; padding: 40px 20px; background: rgba(16, 185, 129, 0.05); border-radius: 12px; border: 2px dashed #10b981;">
+        <div style="font-size: 4rem; margin-bottom: 20px;">📚</div>
+        <h3 style="color: #10b981; margin-bottom: 15px;">Course Content Coming Soon</h3>
+        <p style="color: #cbd5e1; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+            This comprehensive course will include 6 detailed parts covering everything from basic Rust concepts 
+            to advanced embedded programming techniques. The content is currently being developed and will be available soon!
+        </p>
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 1</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Introduction to Rust for Embedded Systems</p>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 2</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Setting Up Development Environment</p>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 3</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Bare Metal Programming</p>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 4</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Hardware Abstraction Layer</p>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 5</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Real-time Systems</p>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; min-width: 200px;">
+                <h4 style="color: #10b981; margin: 0 0 10px 0;">Part 6</h4>
+                <p style="color: #cbd5e1; margin: 0; font-size: 0.9rem;">Advanced Projects</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="purchase-section">
+    <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); padding: 40px 30px; border-radius: 16px; text-align: center; max-width: 800px; margin: 40px auto; border: 2px solid #f59e0b; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.2);">
+        <div style="font-size: 3rem; margin-bottom: 20px;">💎</div>
+        <h2 style="color: #f59e0b; margin-bottom: 20px; font-size: 2rem;">Get This Course</h2>
+        <p style="color: #e2e8f0; line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem;">
+            To purchase and benefit from the complete course content, please contact us through our social media channels. 
+            We'll provide you with all the necessary information and access to the full course materials.
+        </p>
+        
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #38bdf8; margin-bottom: 15px;">Contact Us for Purchase</h3>
+            <p style="color: #cbd5e1; margin-bottom: 25px;">Message us on any of the following platforms to get started:</p>
+        </div>
+        
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+            <a href="https://wa.me/989212960268" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 20px; background: rgba(37, 211, 102, 0.1); border-radius: 12px; border: 2px solid #25d366; transition: all 0.3s ease; min-width: 120px;">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#25d366" style="margin-bottom: 10px;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                <span style="color: #25d366; font-weight: 600; font-size: 0.9rem;">WhatsApp</span>
+                <span style="color: #cbd5e1; font-size: 0.8rem; margin-top: 5px;">+98 921 296 0268</span>
+            </a>
+            
+            <a href="https://t.me/amin98hosseini" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 20px; background: rgba(0, 136, 204, 0.1); border-radius: 12px; border: 2px solid #0088cc; transition: all 0.3s ease; min-width: 120px;">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#0088cc" style="margin-bottom: 10px;">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                <span style="color: #0088cc; font-weight: 600; font-size: 0.9rem;">Telegram</span>
+                <span style="color: #cbd5e1; font-size: 0.8rem; margin-top: 5px;">@amin98hosseini</span>
+            </a>
+            
+            <a href="mailto:amin-techlab@gmail.com" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 20px; background: rgba(220, 53, 69, 0.1); border-radius: 12px; border: 2px solid #dc3545; transition: all 0.3s ease; min-width: 120px;">
+                <div style="font-size: 2.5rem; margin-bottom: 10px;">📧</div>
+                <span style="color: #dc3545; font-weight: 600; font-size: 0.9rem;">Email</span>
+                <span style="color: #cbd5e1; font-size: 0.8rem; margin-top: 5px;">amin-techlab@gmail.com</span>
+            </a>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: rgba(245, 158, 11, 0.1); border-radius: 8px; border: 1px solid #f59e0b;">
+            <p style="color: #f59e0b; margin: 0; font-weight: 600;">💡 Course Price: $49.99</p>
+            <p style="color: #cbd5e1; margin: 5px 0 0 0; font-size: 0.9rem;">Complete access to all 6 parts + lifetime updates</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+  &copy; 2025 Mohammad Amin Hosseini | Designed by Hirad Abdolahpor
+</footer>
+
+<script>
+function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.accordion-icon');
+    
+    // Close all other accordion items
+    const allContents = document.querySelectorAll('.accordion-content');
+    const allIcons = document.querySelectorAll('.accordion-icon');
+    
+    allContents.forEach(item => {
+        if (item !== content) {
+            item.classList.remove('active');
+        }
+    });
+    
+    allIcons.forEach(item => {
+        if (item !== icon) {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Toggle current item
+    content.classList.toggle('active');
+    icon.classList.toggle('active');
+    
+    // Force reflow to ensure transition works
+    if (content.classList.contains('active')) {
+        content.style.display = 'block';
+        setTimeout(() => {
+            content.style.display = '';
+        }, 10);
+    }
+}
+</script>
+
+</body>
+</html>

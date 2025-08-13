@@ -7,6 +7,11 @@ body {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* ====== HEADER ====== */
 header {
     display: flex;
@@ -22,9 +27,30 @@ header a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
-header a:hover { color: #38bdf8; }
+header a:hover { 
+    color: #38bdf8; 
+    background: rgba(56, 189, 248, 0.1);
+    transform: translateY(-2px);
+}
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+header a:hover::after {
+    width: 80%;
+}
 
 /* ====== HERO ====== */
 .hero {
@@ -67,7 +93,7 @@ section {
     padding: 5% 10%;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: all 0.8s ease;
 }
 section.show {
     opacity: 1;
@@ -165,6 +191,41 @@ footer {
 .course-info p {
     font-size: 0.95rem;
     color: #ccc;
+    margin-bottom: 6px;
+}
+
+.price {
+    color: #ccc !important;
+    font-weight: normal;
+    font-size: 0.95rem !important;
+}
+
+.price-label {
+    color: #ccc;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.price-value {
+    color: #10b981;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #0ea5e9;
 }
 
 /* Responsive for smaller screens */

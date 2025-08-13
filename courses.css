@@ -40,6 +40,28 @@
 .course-info p {
     font-size: 1rem;
     color: #ccc;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #10b981 !important;
+    font-weight: bold;
+    font-size: 1.1rem !important;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #0ea5e9;
 }
 
 /* Responsive for tablets and phones */

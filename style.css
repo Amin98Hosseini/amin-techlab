@@ -7,11 +7,6 @@ body {
     scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-}
-
 /* ====== HEADER ====== */
 header {
     display: flex;
@@ -91,9 +86,8 @@ header a:hover::after {
 /* ====== SECTIONS ====== */
 section {
     padding: 5% 10%;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
+    opacity: 1;
+    transform: translateY(0);
 }
 section.show {
     opacity: 1;

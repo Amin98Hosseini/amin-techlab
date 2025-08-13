@@ -198,7 +198,7 @@
     <h2>Course Information</h2>
     <div class="detail-item">
         <span class="detail-label">Instructor:</span>
-        <span class="detail-value">Engineer Amin Khadem Al-Husseini</span>
+        <span class="detail-value">Eng Mohammad Amin khadem Al Hosseini</span>
     </div>
     <div class="detail-item">
         <span class="detail-label">Duration:</span>
@@ -206,7 +206,7 @@
     </div>
     <div class="detail-item">
         <span class="detail-label">Level:</span>
-        <span class="detail-value">Intermediate</span>
+        <span class="detail-value">Beginner</span>
     </div>
     <div class="detail-item">
         <span class="detail-label">Price:</span>
@@ -215,14 +215,13 @@
 </section>
 
 <section class="project-description">
-    <h2>About This Course</h2>
+    <h2>Course Overview</h2>
     <p>
-        FPGA (Field-Programmable Gate Array) is a powerful technology that allows you to design and implement custom digital hardware. 
-        This course provides a comprehensive introduction to FPGA design, from basic concepts to practical implementation.
+        This course is a hands-on, project-based journey into FPGA design using VHDL. You will start from the fundamentals of digital logic and gradually move toward advanced hardware design and integration techniques.
+        With over 30+ real FPGA examples, each explained and implemented step-by-step, you will gain the practical skills to confidently design, simulate, and deploy FPGA-based systems in real-world applications.
     </p>
-    <p>
-        You'll learn how to use hardware description languages (HDL), design digital circuits, and implement them on FPGA boards. 
-        The course covers essential topics like combinational logic, sequential circuits, and advanced FPGA features.
+    <p> 
+        Whether you are a beginner or an engineer looking to sharpen your FPGA skills, this course will guide you through essential concepts, industry-relevant modules, and advanced integrations like IP cores, DSP blocks, memory interfaces, and even soft-core processors like MicroBlaze.
     </p>
 </section>
 
@@ -231,7 +230,7 @@
     
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 1: Introduction to FPGA</h3>
+            <h3>Section 1: Digital Logic Fundamentals</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -240,8 +239,11 @@
                     <iframe src="https://www.youtube.com/embed/8FcmHDeAbWU" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Learn the fundamentals of FPGA technology, including architecture, applications, and development tools. 
-                    Understand how FPGAs differ from traditional microcontrollers and when to use them.
+                    -Comparator : Learn how to compare digital values in hardware.
+                    <br>
+                    -Encoder & Priority Encoder : Convert inputs into encoded outputs with or without priority handling.
+                    <br>
+                    -Full Adder : Understand bit-level addition and multi-bit carry propagation
                 </div>
             </div>
         </div>
@@ -249,7 +251,7 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 2: Hardware Description Languages</h3>
+            <h3>Section 2: Multiplexers and Decoders</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -258,7 +260,9 @@
                     <iframe src="https://www.youtube.com/embed/eqpTjLEWbsw" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Introduction to VHDL and Verilog. Learn the syntax, structure, and best practices for describing digital hardware.
+                    MUX2To1 / MUX4To1 (Multiple Styles) : Implement multiplexers using process blocks, conditional assignments, when-else statements, and case statements.
+                    <br>
+                    Decoder2To4 : Build decoders with process & case-based designs.
                 </div>
             </div>
         </div>
@@ -266,7 +270,7 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 3: Digital Design Fundamentals</h3>
+            <h3>Section 3: Arithmetic & Logic Units</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -275,7 +279,9 @@
                     <iframe src="https://www.youtube.com/embed/mvZqbrju53U" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Master combinational and sequential logic design. Learn about gates, flip-flops, and state machines.
+                    -Signed 16-bit Full Adder : Handle signed arithmetic in hardware.
+                    <br>
+                    -ALU 74381 : Recreate a classic 4-bit ALU, including logic, arithmetic, and shift operations.
                 </div>
             </div>
         </div>
@@ -283,7 +289,7 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 4: FPGA Implementation</h3>
+            <h3>Section 4: Sequential Logic & Registers</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -292,7 +298,11 @@
                     <iframe src="https://www.youtube.com/embed/jmXuN61GB_k" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Learn how to synthesize, place, and route your designs on FPGA hardware. Understand timing constraints and optimization.
+                    -Flip-Flops (Sync & Async Reset) : Implement basic storage elements.
+                    <br>
+                    -Generic Registers : Create n-bit parameterized registers for flexible design.
+                    <br>
+                    -Shift Registers (8-bit & 16-bit with For Loop) : Efficiently move data in hardware.
                 </div>
             </div>
         </div>
@@ -300,7 +310,7 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 5: Advanced Projects</h3>
+            <h3>Section 5: Counters & Sequence Detection</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -309,7 +319,100 @@
                     <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Apply your knowledge to real-world projects. Design and implement complex digital systems on FPGA.
+                    -Up/Down Counters : Build simple and BCD counters for 7-segment displays.
+                    <br>
+                    -Sequence Detector : Detect bit patterns in a data stream.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Section 6:  IP Core Integration</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -Adder Using IP Core : Integrate vendor-supplied optimized blocks.
+                    <br>
+                    -DCM IP Core : Modify clock frequencies inside an FPGA.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Section 7:  DSP & Signal Processing</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -4-Point FFT – Implement a basic Fast Fourier Transform in VHDL.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Section 8:  Peripherals & Memory</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -Segment Counter Button : Control a display without debounce.
+                    <br>
+                    -Block RAM : Implement and use internal FPGA memory.
+                    <br>
+                    -SRAM Interface : Connect external SRAM with FPGA logic.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Section 9:  Debugging with ChipScope</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -Counter & RS232 Test – Monitor FPGA internals with ChipScope Analyzer.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Section 10:  Embedded Soft-Core Processor</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -MicroBlaze Integration – Combine HDL modules with MicroBlaze for hybrid FPGA-CPU designs.
                 </div>
             </div>
         </div>

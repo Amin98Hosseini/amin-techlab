@@ -165,6 +165,8 @@ footer {
     width: 280px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 .course-card:hover {
     transform: translateY(-8px);
@@ -176,6 +178,10 @@ footer {
 }
 .course-info {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 .course-info h3 {
     color: #38bdf8;
@@ -216,6 +222,7 @@ footer {
     margin-top: 12px;
     font-size: 0.9rem;
     transition: background 0.3s ease;
+    align-self: flex-start;
 }
 
 .learn-more-btn:hover {

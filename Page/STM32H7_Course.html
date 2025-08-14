@@ -144,7 +144,9 @@
 }
 
 .accordion-content.active {
-    max-height: 500px;
+    max-height: 70vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .accordion-body {
@@ -218,14 +220,16 @@
 <section class="project-description">
     <h2>About This Course</h2>
     <p>
-        The STM32H7 family represents STMicroelectronics’ most powerful microcontrollers, built for high-speed, high-performance, and demanding embedded applications.
-        In this course, you will gain in-depth knowledge of the STM32H7 architecture, peripherals, and advanced features.
-        Through hands-on projects and real-world examples, you’ll learn how to design, develop, and optimize applications for industries ranging from IoT and robotics to industrial automation and consumer electronics.
+        The STM32H7 Advanced Course is designed for embedded systems developers who want to master the STM32H745I-DISCO board and unlock the full potential of its dual-core architecture.
+        Through a combination of hardware exploration, practical coding projects,
+        and in-depth performance optimization techniques, you will gain the skills to design and implement high-performance embedded applications for IoT,
+        industrial control, and real-time systems.
     </p>
+    <br>
     <p>
-        By the end of this course, you'll have a solid understanding of STM8 programming and be able to create your own 
-        embedded projects. The course covers essential topics like software installation, GPIO configuration, interrupt handling, 
-        and LCD display programming.
+        From understanding every feature of the STM32H745I-DISCO hardware to writing efficient code for both the Cortex-M7 and Cortex-M4 cores,
+        and finally diving into advanced memory management with I-Cache and D-Cache,
+        this course builds your expertise step-by-step with real-world examples.
     </p>
 </section>
 
@@ -234,17 +238,18 @@
     
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 1: Install Software</h3>
+            <h3>Section 1: STM32H745I-DISCO Board Overview</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
             <div class="accordion-body">
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/8FcmHDeAbWU" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Learn how to install and set up the necessary software tools for STM8 development. 
-                    This includes the IDE, compiler, and debugging tools required for programming STM8 microcontrollers.
+                    Explore every detail of the STM32H745I-DISCO board — from its high-performance STM32H745XIH6 microcontroller to its powerful peripherals.
+                    Learn how to use its dual-core setup, onboard sensors, LCD display, external memories,
+                    and communication interfaces for advanced embedded projects.
                 </div>
             </div>
         </div>
@@ -252,17 +257,18 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 2: GPIO Config (Section 1)</h3>
+            <h3>Section 2: Getting Started with Dual-Core Programming</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
             <div class="accordion-body">
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/eqpTjLEWbsw" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    First part of GPIO configuration tutorial. Learn the basics of configuring General Purpose Input/Output pins 
-                    on the STM8 microcontroller for various applications.
+                    Build your first project on the STM32H7 platform — the classic Blinky LED — but with a twist:
+                    running it independently on Cortex-M7 and Cortex-M4 cores.
+                    Learn how to configure pins, write minimal code, manage boot settings, and test functionality on each core.
                 </div>
             </div>
         </div>
@@ -270,7 +276,7 @@
 
     <div class="accordion-item">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 3: GPIO Config (Section 2)</h3>
+            <h3>Section 3: STM32H7 Cache (I-Cache & D-Cache)</h3>
             <span class="accordion-icon">▼</span>
         </div>
         <div class="accordion-content">
@@ -279,48 +285,15 @@
                     <iframe src="https://www.youtube.com/embed/mvZqbrju53U" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="part-description">
-                    Second part of GPIO configuration. Continue learning advanced GPIO techniques and practical examples 
-                    for controlling external devices and sensors.
+                    Master the use of I-Cache and D-Cache to improve execution speed and data access efficiency.
+                    Understand different cache policies, learn how to handle cache coherency,
+                    and apply cache maintenance functions to keep your system stable and high-performing.
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 4: Interrupts</h3>
-            <span class="accordion-icon">▼</span>
-        </div>
-        <div class="accordion-content">
-            <div class="accordion-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/jmXuN61GB_k" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="part-description">
-                    Master interrupt handling in STM8. Learn how to configure and use interrupts for efficient 
-                    event-driven programming and real-time applications.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-            <h3>Part 5: LCD</h3>
-            <span class="accordion-icon">▼</span>
-        </div>
-        <div class="accordion-content">
-            <div class="accordion-body">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/bB0UjqFer2g" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="part-description">
-                    Learn how to interface and program LCD displays with STM8. This lesson covers LCD initialization, 
-                    text display, and creating custom characters for your projects.
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </section>
 
 <footer>

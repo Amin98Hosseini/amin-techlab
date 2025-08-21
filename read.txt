@@ -1,0 +1,109 @@
+# Amin TechLab - Professional Portfolio
+
+A modern, responsive portfolio website showcasing expertise in embedded systems, FPGA development, and AI integration. Built with HTML5, CSS3, and JavaScript.
+
+## 🚀 Features
+
+- **Modern Design**: Clean, professional dark theme with blue accents
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
+- **Interactive Elements**: Smooth animations and hover effects
+- **Professional Sections**: About, Skills, Projects, Courses, and Contact
+- **Course Showcase**: Dedicated section for technical courses
+- **Social Integration**: LinkedIn, Instagram, and Telegram links
+
+## 🛠️ Technologies Used
+
+- **HTML5**: Semantic markup and modern structure
+- **CSS3**: Flexbox, Grid, animations, and responsive design
+- **JavaScript**: Interactive functionality and smooth scrolling
+- **Google Fonts**: Poppins font family for modern typography
+
+## 📁 Project Structure
+
+```
+amin-techlab/
+├── index.html              # Main portfolio page
+├── css/
+│   ├── style.css           # Main stylesheet
+│   └── courses.css         # Course-specific styles
+├── img/                    # Image assets
+├── Page/                   # Course detail pages
+│   ├── courses.html
+│   ├── STM8_Course.html
+│   ├── STM32H7_Course.html
+│   ├── FPGA_Course.html
+│   └── EmbeddedRust_Course.html
+├── script.js               # JavaScript functionality
+└── README.md               # Project documentation
+```
+
+## 🎯 Key Sections
+
+### Hero Section
+- Professional introduction with title and description
+- Social media links (LinkedIn, Instagram, Telegram)
+- Professional headshot
+
+### About Section
+- Detailed professional background
+- Experience highlights with statistics
+- Master's degree in Digital Electronic Systems
+
+### Skills Section
+- **Embedded Systems**: STM32, ESP32, ARM Cortex-M, STM8, FreeRTOS
+- **FPGA & Digital Design**: VHDL, Verilog, Xilinx Zynq, Spartan-6
+- **PCB Design & Hardware**: Altium Designer, KiCad, High-Speed Design
+- **AI & Machine Learning**: PyTorch, TensorFlow, Deep Learning, SoC Deployment
+
+### Projects Section
+- **Smart City Sensor Platform**: IoT and embedded systems
+- **MIPS Processor on FPGA**: Advanced digital design
+- **MRI Brain Tumor Detection**: AI and medical imaging
+- **RFID Access Control System**: Hardware and security
+
+### Courses Section
+- **STM8 Learning (Elementary)**: 2 hours, Free
+- **Advanced STM32H7 Course**: 8 hours, Free
+- **Mastering FPGA Design With VHDL**: 10 hours, Coming Soon
+
+### Contact Section
+- Professional contact information
+- Social media links
+- Support section with CoffeeBede integration
+
+## 🎨 Design Features
+
+- **Color Scheme**: Dark theme (#0f172a) with blue accents (#38bdf8)
+- **Typography**: Poppins font family for readability
+- **Animations**: Smooth fade-in and slide-in effects
+- **Hover Effects**: Interactive elements with transform animations
+- **Grid Layout**: Modern CSS Grid for responsive design
+- **Card Design**: Consistent card-based layout for projects and courses
+
+## 📱 Responsive Design
+
+- **Desktop**: Full-featured layout with side-by-side sections
+- **Tablet**: Optimized for medium screens with adjusted spacing
+- **Mobile**: Single-column layout with touch-friendly interactions
+
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Open `index.html` in a web browser
+3. Navigate through the sections using the header menu
+4. Explore course details in the `Page/` directory
+
+## 📧 Contact
+
+- **Email**: amin.techlab@gmail.com
+- **LinkedIn**: [Mohammad Amin Khadem Al Hosseini](https://www.linkedin.com/in/amin98hosseini/)
+- **Instagram**: [@amin_techlab](https://www.instagram.com/amin_techlab/)
+- **Telegram**: [@Amin_TechLab](https://t.me/Amin_TechLab)
+
+## 📄 License
+
+This project is open source and available under the [LICENSE](LICENSE) file.
+
+---
+
+**Designed and Developed by Mohammad Amin Khadem Al Hosseini**

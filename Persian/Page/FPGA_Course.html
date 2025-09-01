@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FPGA برای مبتدیان | امین تک‌لب</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+.course-header {
+    padding: 120px 5% 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.course-thumbnail {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.course-details {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-details h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.detail-value {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.project-description {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-description h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-description p {
+    color: #e2e8f0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.course-content {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-content h2 {
+    color: #38bdf8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accordion-item {
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background: #334155;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #475569;
+}
+
+.accordion-header h3 {
+    color: #e2e8f0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.accordion-icon {
+    color: #38bdf8;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-icon.active {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #1e293b;
+    opacity: 0;
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.accordion-body {
+    padding: 20px;
+    background: #1e293b;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.part-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+      <div><strong>Amin TechLab</strong></div>
+  <nav>
+    <a href="../index.html">خانه</a>
+    <a href="../Page/courses.html">دوره‌ها</a>
+    <a href="../../index.html" style="color: #38bdf8; font-weight: 600;">Fa to En</a>
+  </nav>
+</header>
+
+<section class="course-header">
+    <h1>تسلط بر طراحی FPGA با VHDL</h1>
+    <img src="../img/IMG_FPGA_Course.png" alt="تصویر دوره FPGA" class="course-thumbnail">
+</section>
+
+<section class="course-details">
+    <h2>اطلاعات دوره</h2>
+    <div class="detail-item">
+        <span class="detail-label">مدرس:</span>
+        <span class="detail-value">مهندس محمد امین خادم الحسینی</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">مدت زمان:</span>
+        <span class="detail-value">۱۰ ساعت</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">سطح:</span>
+        <span class="detail-value">مبتدی</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">زبان:</span>
+        <span class="detail-value">انگلیسی</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">قیمت:</span>
+        <span class="detail-value" style="color: #10b981; font-weight: bold;">رایگان</span>
+    </div>
+</section>
+
+<section class="project-description">
+    <h2>مروری بر دوره</h2>
+    <p>
+        این دوره یک سفر عملی و مبتنی بر پروژه به طراحی FPGA با استفاده از VHDL است. شما از اصول اولیه منطق دیجیتال شروع می‌کنید و به تدریج به سمت تکنیک‌های طراحی سخت‌افزار پیشرفته و یکپارچه‌سازی حرکت می‌کنید.
+        با بیش از ۳۰+ مثال واقعی FPGA، هر کدام به صورت گام به گام توضیح داده شده و پیاده‌سازی شده، شما مهارت‌های عملی برای طراحی، شبیه‌سازی و استقرار سیستم‌های مبتنی بر FPGA در کاربردهای دنیای واقعی را کسب خواهید کرد.
+    </p>
+    <p> 
+        چه مبتدی باشید یا مهندسی که می‌خواهد مهارت‌های FPGA خود را تقویت کند، این دوره شما را از طریق مفاهیم ضروری، ماژول‌های مرتبط با صنعت و یکپارچه‌سازی‌های پیشرفته مانند IP cores، بلوک‌های DSP، رابط‌های حافظه و حتی پردازنده‌های نرم مانند MicroBlaze راهنمایی می‌کند.
+    </p>
+</section>
+
+<section class="course-content">
+    <h2>محتوای دوره و فصل‌ها</h2>
+    
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۱: اصول اولیه منطق دیجیتال</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -مقایسه‌کننده: نحوه مقایسه مقادیر دیجیتال در سخت‌افزار را یاد بگیرید.
+                    <br>
+                    -رمزگذار و رمزگذار اولویت‌دار: تبدیل ورودی‌ها به خروجی‌های رمزگذاری شده با یا بدون مدیریت اولویت.
+                    <br>
+                    -جمع‌کننده کامل: درک جمع در سطح بیت و انتشار carry چند بیتی
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۲: مالتی‌پلکسرها و رمزگشاها</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    MUX2To1 / MUX4To1 (چندین سبک): پیاده‌سازی مالتی‌پلکسرها با استفاده از بلوک‌های process، انتساب‌های شرطی، عبارات when-else و case.
+                    <br>
+                    Decoder2To4: ساخت رمزگشاها با طراحی‌های مبتنی بر process و case.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۳: واحدهای محاسباتی و منطقی</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -جمع‌کننده کامل ۱۶ بیتی علامت‌دار: مدیریت محاسبات علامت‌دار در سخت‌افزار.
+                    <br>
+                    -ALU 74381: بازسازی یک ALU 4 بیتی کلاسیک، شامل عملیات منطقی، محاسباتی و شیفت.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۴: منطق ترتیبی و رجیسترها</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -فلیپ‌فلاپ‌ها (Reset همزمان و غیرهمزمان): پیاده‌سازی عناصر ذخیره‌سازی پایه.
+                    <br>
+                    -رجیسترهای عمومی: ایجاد رجیسترهای n بیتی پارامتری برای طراحی انعطاف‌پذیر.
+                    <br>
+                    -رجیسترهای شیفت (۸ بیتی و ۱۶ بیتی با حلقه For): حرکت کارآمد داده در سخت‌افزار.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۵: شمارنده‌ها و تشخیص توالی</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -شمارنده‌های بالا/پایین: ساخت شمارنده‌های ساده و BCD برای نمایش‌های 7-segment.
+                    <br>
+                    -تشخیص‌دهنده توالی: تشخیص الگوهای بیتی در جریان داده.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۶: یکپارچه‌سازی IP Core</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -جمع‌کننده با استفاده از IP Core: یکپارچه‌سازی بلوک‌های بهینه‌سازی شده تامین‌کننده.
+                    <br>
+                    -IP Core DCM: تغییر فرکانس‌های ساعت داخل FPGA.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۷: DSP و پردازش سیگنال</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -FFT 4 نقطه‌ای – پیاده‌سازی یک تبدیل فوریه سریع پایه در VHDL.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۸: پریفرال‌ها و حافظه</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -شمارنده segment دکمه: کنترل نمایش بدون debounce.
+                    <br>
+                    -Block RAM: پیاده‌سازی و استفاده از حافظه داخلی FPGA.
+                    <br>
+                    -رابط SRAM: اتصال SRAM خارجی با منطق FPGA.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۹: دیباگ با ChipScope</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -تست شمارنده و RS232 – نظارت بر داخلی FPGA با ChipScope Analyzer.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۱۰: پردازنده نرم تعبیه‌شده</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    -یکپارچه‌سازی MicroBlaze – ترکیب ماژول‌های HDL با MicroBlaze برای طراحی‌های ترکیبی FPGA-CPU.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+  &copy; 2025 Mohammad Amin Hosseini 
+</footer>
+
+<script>
+function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.accordion-icon');
+    
+    // Close all other accordion items
+    const allContents = document.querySelectorAll('.accordion-content');
+    const allIcons = document.querySelectorAll('.accordion-icon');
+    
+    allContents.forEach(item => {
+        if (item !== content) {
+            item.classList.remove('active');
+        }
+    });
+    
+    allIcons.forEach(item => {
+        if (item !== icon) {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Toggle current item
+    content.classList.toggle('active');
+    icon.classList.toggle('active');
+    
+    // Force reflow to ensure transition works
+    if (content.classList.contains('active')) {
+        content.style.display = 'block';
+        setTimeout(() => {
+            content.style.display = '';
+        }, 10);
+    }
+}
+</script>
+
+</body>
+</html>

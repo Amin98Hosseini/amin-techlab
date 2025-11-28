@@ -357,6 +357,46 @@
     </div>
 </div>
 
+<div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Section 6: Practical MPU Examples on STM32H7 (Real Memory Protection!)</h3>
+        <span class="accordion-icon">▼</span>
+    </div>
+    <div class="accordion-content">
+        <div class="accordion-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/eB-LPD-p2a0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="part-description">
+                In the previous episode, we learned the fundamentals of the Memory Protection Unit (MPU).  
+                Now it's time to step into the real world with two extremely practical examples, each tested with real faults and debugging techniques.
+
+                <br><br>
+                <strong>🧪 Example 1: Preventing Code Execution in SRAM</strong><br>
+                Learn how to mark a region of SRAM as <strong>Non-Executable</strong>, making any attempt to run code from it trigger a Fault.
+                This technique is crucial for protecting your system from unexpected behavior and dangerous bugs.
+
+                <br><br>
+                <strong>🛡️ Example 2: Creating a Read-Only Region in SRAM</strong><br>
+                In this example, we configure part of the memory as <strong>Read-Only</strong>.  
+                Then we intentionally attempt to write to it, observe the MPU violation, and analyze the error using the Fault Analyzer tool.
+
+                <br><br>
+                <strong>Topics Covered:</strong>
+                <ul>
+                    <li>Defining MPU regions for safe program execution</li>
+                    <li>Detailed MPU configuration in STM32CubeIDE</li>
+                    <li>Modifying the Linker Script to place code/data in specific regions</li>
+                    <li>Testing faults using the Fault_Handler and observing real errors</li>
+                    <li>Using the Fault Analyzer tool for advanced debugging</li>
+                    <li>Important tips to avoid random crashes and unpredictable software bugs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     
 </section>
 

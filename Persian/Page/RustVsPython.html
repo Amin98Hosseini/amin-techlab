@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>آموزش پیشرفته STM32H7 | امین تک‌لب</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+/* --- same CSS unchanged (your original code) --- */
+.course-header {
+    padding: 120px 5% 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+.course-thumbnail {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.course-details {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.course-details h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #334155;
+}
+.detail-item:last-child {
+    border-bottom: none;
+}
+.detail-label {
+    font-weight: 500;
+    color: #94a3b8;
+}
+.detail-value {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+.project-description {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-description h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.project-description p {
+    color: #e2e8f0;
+    line-height: 1.8;
+    text-align: justify;
+}
+.course-content {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.course-content h2 {
+    color: #38bdf8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.accordion-item {
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.accordion-header {
+    background: #334155;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+.accordion-header:hover {
+    background: #475569;
+}
+.accordion-header h3 {
+    color: #e2e8f0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+.accordion-icon {
+    color: #38bdf8;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.accordion-icon.active {
+    transform: rotate(180deg);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.accordion-content.active {
+    max-height: 70vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.accordion-body {
+    padding: 20px;
+    background: #1e293b;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.part-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+      <div><strong>Amin TechLab</strong></div>
+  <nav>
+    <a href="../index.html">خانه</a>
+    <a href="../Page/courses.html">دوره‌ها</a>
+    <a href="../../index.html" style="color: #38bdf8; font-weight: 600;">Fa to En</a>
+  </nav>
+</header>
+
+<section class="course-header">
+    <h1>دوره پیشرفته STM32H7</h1>
+    <img src="../img/course 2.avif" alt="تصویر دوره STM32H7" class="course-thumbnail">
+</section>
+
+<section class="course-details">
+    <h2>اطلاعات دوره</h2>
+    <div class="detail-item">
+        <span class="detail-label">مدرس:</span>
+        <span class="detail-value">مهندس محمد امین خادم الحسینی</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">مدت زمان:</span>
+        <span class="detail-value">۸ ساعت</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">سطح:</span>
+        <span class="detail-value">پیشرفته</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">زبان:</span>
+        <span class="detail-value">فارسی</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-label">قیمت:</span>
+        <span class="detail-value" style="color: #10b981; font-weight: bold;">رایگان</span>
+    </div>
+</section>
+
+<section class="project-description">
+    <h2>درباره این دوره</h2>
+    <p>
+        دوره پیشرفته STM32H7 برای توسعه‌دهندگان سیستم‌های تعبیه‌شده طراحی شده که می‌خواهند برد STM32H745I-DISCO را تسلط پیدا کنند و پتانسیل کامل معماری دو هسته‌ای آن را باز کنند.
+        از طریق پروژه‌های عملی، کار با هسته‌های M7 و M4، و تکنیک‌های مدیریت حافظه و کش، شما به مهارت‌های تخصصی در سیستم‌های پیشرفته تعبیه‌شده دست پیدا خواهید کرد.
+    </p>
+</section>
+
+<section class="course-content">
+    <h2>محتوای دوره و فصل‌ها</h2>
+
+    <!-- ==== بخش ۱ ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۱: مروری بر برد STM32H745I-DISCO</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/4otGP1hS2-I" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    در این فصل تمامی اجزای برد شامل MCU، LCD، حافظه‌ها، و پریفرال‌ها بررسی شده و دید کاملی از توان پردازشی و امکانات برد خواهید داشت.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== بخش ۲ ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۲: شروع برنامه‌نویسی دو هسته‌ای</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5mXd-BHTuVQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    اجرای LED چشمک‌زن روی هر دو هسته، مدیریت بوت، و ساخت اولین پروژه Dual-Core.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== بخش ۳ ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۳: کش STM32H7 (I-Cache و D-Cache)</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/2KIQ3otHxmk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    آموزش کامل فعال‌سازی کش، مدیریت انسجام، و بهینه‌سازی عملکرد CPU.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== بخش ۴: مثال عملی کش ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۴: مثال عملی Cache در STM32H7 (اندازه‌گیری عملکرد)</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/zRqqNz8N7nA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    در این فصل تفاوت عملکرد CPU با کش فعال و غیرفعال را با اندازه‌گیری زمان اجرای حلقه‌ها، ارسال خروجی از UART/SWO و تحلیل نتایج مشاهده می‌کنید.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== بخش ۵: آشنایی با MPU ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۵: آشنایی با MPU در STM32H7 (Memory Protection Unit)</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/u-KGKyQg2sk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    معرفی کامل MPU، ساختار داخلی، Regionها، و نحوه تنظیم دسترسی‌ها و مجوزها برای جلوگیری از خطاهای حافظه و باگ‌های ناخواسته.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== بخش ۶: مثال‌های عملی MPU ==== -->
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>بخش ۶: مثال‌های عملی MPU (محافظت واقعی از حافظه!)</h3>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-body">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/eB-LPD-p2a0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="part-description">
+                    شامل دو مثال واقعی:  
+                    - جلوگیری از اجرای کد در SRAM  
+                    - ساخت Region فقط‌خواندنی و مشاهده Fault  
+                    به همراه تست عملی، بررسی Fault Handler و تحلیل خطا با ابزار Fault Analyzer.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+  &copy; 2025 Mohammad Amin Hosseini
+</footer>
+
+<script>
+function toggleAccordion(header) {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.accordion-icon');
+
+    const allContents = document.querySelectorAll('.accordion-content');
+    const allIcons = document.querySelectorAll('.accordion-icon');
+
+    allContents.forEach(item => {
+        if (item !== content) item.classList.remove('active');
+    });
+    allIcons.forEach(item => {
+        if (item !== icon) item.classList.remove('active');
+    });
+
+    content.classList.toggle('active');
+    icon.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

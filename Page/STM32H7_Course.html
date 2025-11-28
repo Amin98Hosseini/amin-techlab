@@ -295,28 +295,29 @@
 
     <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Section 4: Why Is the STM32H7 So Fast? Deep Dive Into Cache</h3>
+        <h3>Section 4: Practical Cache Example on STM32H7 (I-Cache & D-Cache in Action)</h3>
         <span class="accordion-icon">▼</span>
     </div>
     <div class="accordion-content">
         <div class="accordion-body">
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/2KIQ3otHxmk" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/zRqqNz8N7nA" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="part-description">
-                Discover why the STM32H7 series delivers exceptional performance.  
-                In this episode, we explore one of the key reasons behind its speed — the caching system.
+                In the previous lesson, we learned what Cache is and why enabling it significantly improves the performance of STM32H7 MCUs.
+                In this episode, we put theory into practice with a real coding example to analyze the impact of enabling and disabling the I-Cache and D-Cache.
 
-                Learn what Cache really is, understand the differences between Instruction Cache (I-Cache) 
-                and Data Cache (D-Cache), and see how enabling or disabling them impacts overall system behavior 
-                and code execution performance.
+                By measuring loop execution times and observing outputs through UART and SWO, you will clearly see how Cache affects CPU execution speed.
+
                 <br><br>
-                <strong>In this episode, you will learn:</strong><br>
-                • What Cache is and why it matters<br>
-                • Differences between I-Cache and D-Cache<br>
-                • Memory architecture inside the Cortex-M7 core<br>
-                • How Cache interacts with TCM (Tightly Coupled Memory)<br>
-                • Real-world examples demonstrating Cache impact on CPU performance
+                <strong>Topics Covered:</strong>
+                <ul>
+                    <li>Quick recap of I-Cache and D-Cache concepts</li>
+                    <li>How to enable and disable Cache on STM32H7</li>
+                    <li>Measuring loop execution time with and without Cache</li>
+                    <li>Sending performance logs through UART or SWO</li>
+                    <li>Analyzing results and comparing performance in different configurations</li>
+                </ul>
             </div>
         </div>
     </div>
